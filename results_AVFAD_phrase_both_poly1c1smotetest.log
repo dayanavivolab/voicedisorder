@@ -1,0 +1,19 @@
+Results SMOTE
+AVFAD Database, Features Compare2016 5fold, audiotype and gender: phrase_both
+SVM Config: Kernel=poly, Degree=1, C(tol)=1.00 
+
+HEALTH: 1728, PATH: 1669
+Oracle: Fold1 (198.74sec): Acc=0.8973, AccHealth=0.8137, AccPath=0.9838, UAR=0.8987, F1Score=0.9039, Recall=0.9838, Precision=0.8360, AUC=0.9624, EER=0.0929, TP=48.3368, TN=41.3895, FP=9.4790, FN=0.7948, 
+Test Fold1 (198.74sec): Acc=0.8718, AccHealth=0.7856, AccPath=0.9656, UAR=0.8756, F1Score=0.8782, Recall=0.9656, Precision=0.8053, AUC=0.9360, EER=0.1400, TP=46.2353, TN=40.9412, FP=11.1765, FN=1.6471, 
+SMOTE_balance
+HEALTH: 1728, PATH: 1728
+Fold1 (198.74sec): Acc=0.8706, AccHealth=0.7833, AccPath=0.9656, UAR=0.8744, F1Score=0.8772, Recall=0.9656, Precision=0.8037, AUC=0.9358, EER=0.1377, TP=46.2353, TN=40.8235, FP=11.2941, FN=1.6471, 
+SMOTEORACLE_balance
+Health: 1728, Path: 1728
+Fold1 (198.74sec): Acc=0.8976, AccHealth=0.8079, AccPath=0.9873, UAR=0.8976, F1Score=0.9060, Recall=0.9873, Precision=0.8371, AUC=0.9624, EER=0.0943, TP=49.3634, TN=40.3935, FP=9.6065, FN=0.6366, 
+BorderlineSMOTE_balance
+HEALTH: 1728, PATH: 1728
+Fold1 (198.74sec): Acc=0.8694, AccHealth=0.78, AccPath=0.97, UAR=0.8734, F1Score=0.88, Recall=0.97, Precision=0.80, AUC=0.9360, EER=0.1400, TP=46.35, TN=40.59, FP=11.53, FN=1.53, 
+SVMSMOTE_balance
+HEALTH: 1728, PATH: 1728
+Fold1 (198.74sec): Acc=0.8694, AccHealth=0.7810, AccPath=0.9656, UAR=0.8733, F1Score=0.8763, Recall=0.9656, Precision=0.8020, AUC=0.9362, EER=0.1417, TP=46.2353, TN=40.7059, FP=11.4118, FN=1.6471, 

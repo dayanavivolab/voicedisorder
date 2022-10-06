@@ -1,0 +1,3 @@
+Results SMOTE
+AVFAD Database, Features Compare2016 5fold, audiotype and gender: phrase_male
+SVM Config: Kernel=poly, Degree=1, C(tol)=1.00 

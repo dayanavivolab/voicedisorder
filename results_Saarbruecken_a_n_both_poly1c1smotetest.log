@@ -1,0 +1,26 @@
+Results SMOTE
+Saarbruecken Database, Features Compare2016 5fold, audiotype and gender: a_n_both
+SVM Config: Kernel=poly, Degree=1, C(tol)=1.00 
+
+HEALTH: 550, PATH: 1081
+Oracle: Fold1 (94.85sec): Acc=0.8694, AccHealth=0.7327, AccPath=0.9389, UAR=0.8358, F1Score=0.9050, Recall=0.9389, Precision=0.8735, AUC=0.9328, EER=0.1401, TP=62.2318, TN=24.7088, FP=9.0129, FN=4.0466, 
+Test Fold1 (94.86sec): Acc=0.7000, AccHealth=0.4526, AccPath=0.8242, UAR=0.6384, F1Score=0.7853, Recall=0.8242, Precision=0.7500, AUC=0.7590, EER=0.3212, TP=54.8780, TN=15.1220, FP=18.2927, FN=11.7073, 
+SMOTE_balance
+HEALTH: 1081, PATH: 1081
+Fold1 (94.86sec): Acc=0.6976, AccHealth=0.6642, AccPath=0.7143, UAR=0.6893, F1Score=0.7588, Recall=0.7143, Precision=0.8091, AUC=0.7596, EER=0.2993, TP=47.5610, TN=22.1951, FP=11.2195, FN=19.0244, 
+SMOTEORACLE_balance
+Health: 1081, Path: 1081
+Fold1 (94.86sec): Acc=0.8969, AccHealth=0.9565, AccPath=0.8372, UAR=0.8969, F1Score=0.8903, Recall=0.8372, Precision=0.9506, AUC=0.9601, EER=0.0888, TP=41.8594, TN=47.8261, FP=2.1739, FN=8.1406, 
+BorderlineSMOTE_balance
+HEALTH: 1081, PATH: 1081
+Fold1 (94.86sec): Acc=0.6927, AccHealth=0.69, AccPath=0.70, UAR=0.6911, F1Score=0.75, Recall=0.70, Precision=0.82, AUC=0.7592, EER=0.3054, TP=46.34, TN=22.93, FP=10.49, FN=20.24, 
+SVMSMOTE_balance
+HEALTH: 1081, PATH: 1081
+Fold1 (94.86sec): Acc=0.6976, AccHealth=0.6788, AccPath=0.7070, UAR=0.6929, F1Score=0.7569, Recall=0.7070, Precision=0.8143, AUC=0.7536, EER=0.3040, TP=47.0732, TN=22.6829, FP=10.7317, FN=19.5122, 
+ADASYNSMOTE_balance
+HEALTH: 1081, PATH: 1081
+Fold1 (94.86sec): Acc=0.6878, AccHealth=0.6861, AccPath=0.6886, UAR=0.6874, F1Score=0.7460, Recall=0.6886, Precision=0.8139, AUC=0.7574, EER=0.3139, TP=45.8537, TN=22.9268, FP=10.4878, FN=20.7317, 
+
+HEALTH: 548, PATH: 1067
+Oracle: Fold2 (92.69sec): Acc=0.8749, AccHealth=0.7281, AccPath=0.9503, UAR=0.8392, F1Score=0.9094, Recall=0.9503, Precision=0.8719, AUC=0.9406, EER=0.1277, TP=62.7864, TN=24.7059, FP=9.2260, FN=3.2817, 
+Test Fold2 (92.69sec): Acc=0.7042, AccHealth=0.4460, AccPath=0.8293, UAR=0.6377, F1Score=0.7907, Recall=0.8293, Precision=0.7556, AUC=0.7493, EER=0.3192, TP=55.8685, TN=14.5540, FP=18.0751, FN=11.5023, 

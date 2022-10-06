@@ -1,0 +1,15 @@
+__pycache__
+.vscode
+.condor
+condor*
+*.sh
+data/audio
+data/features
+data/figures
+data/new_audio
+data/result_old
+data/xlsx
+bin/more
+src/more
+src/RSR
+log
