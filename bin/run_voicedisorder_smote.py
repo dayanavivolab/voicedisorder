@@ -32,14 +32,14 @@ def main(list_path, kfold, audio_type):
     ker, d, c ='poly',1,1 # SVM configuration
     label = os.path.basename(list_path)
 
-    result_log = 'results_'+label+'_'+audio_type+'_'+ker+str(d)+'c'+str(c)+'smotetest.log'
+    respath = 'data/result/'+label
+    if not os.path.exists(respath): os.mkdir(respath)
+
+    result_log = respath+'/results_'+label+'_'+audio_type+'_'+ker+str(d)+'c'+str(c)+'smotetest.log'
     f = open(result_log, 'w+')
     f.write('Results SMOTE\n%s Database, Features Compare2016 %ifold, audiotype and gender: %s\n' % (label, kfold, audio_type))
     f.write('SVM Config: Kernel=%s, Degree=%i, C(tol)=%.2f \n' % (ker, d, c))
     f.close()
-
-    respath = 'data/result/'+label
-    if not os.path.exists(respath): os.mkdir(respath)
 
     score = np.zeros((13,kfold))
     score_oracle = np.zeros((13,kfold))
