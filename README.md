@@ -25,9 +25,6 @@ git clone https://github.com/dayanavivolab/voicedisorder.git
 
 ```
 python -m venv /scratch/user/miniconda3/envs/voicedisorder
-```
-
-```
 source /scratch/user/miniconda3/envs/voicedisorder/bin/activate
 ```
 
