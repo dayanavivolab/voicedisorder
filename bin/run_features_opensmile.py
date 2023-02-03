@@ -45,7 +45,7 @@ def main(audio_path, outpath):
 if __name__ == '__main__':
     args = sys.argv[1:]
     if len(args) == 0:
-        print('Usage: compute_csvfeatures_opensmile.py audio_path out_path')
+        print('Usage: run_features_opensmile.py audio_path out_path')
         print('   audio_path: Directory or list(ext=".list") for audio files')
         print(' Example Dir: python bin/run_features_opensmile.py data/audio/Saarbruecken data/features/Saarbruecken')
         print(' Example List: python bin/run_features_opensmile.py data/lst/Saarbruecken.wav.list data/features/Saarbruecken')
