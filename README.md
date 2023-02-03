@@ -50,12 +50,6 @@ python bin/run_voicedisorder_smote.py list_path kfold audio_type
 Example: python bin/run_voicedisorder_smote.py data/lst 5 aiu_both
 ```
 
-For SMOTE data-augmentation you can use:
-```
-python bin/run_voicedisorder_smote.py list_path kfold audio_type
-Example: python bin/run_voicedisorder_smote.py data/lst 5 aiu_both
-```
-
 For computing opensmile ComPARE parameters you can use (modify accordingly if you prefer to extract Gemaps or eGemaps parameters):
 ```
 python bin/run_features_opensmile.py audio_path out_path
