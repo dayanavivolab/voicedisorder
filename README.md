@@ -32,11 +32,9 @@ source /scratch/user/miniconda3/envs/voicedisorder/bin/activate
 For running experiments you can use:
 ```
 python bin/run_voicedisorder.py list_path kfold audio_type
-```
 
-```
-Where: 
-- audio_type: combiantion between audiotype and gender (audiotype_gender) 
+Input/Output:
+- audio_type: combination between audiotype and gender (audiotype_gender) 
 audiotype (SVD): a_n, aiu, phrase, multi_a_n, multi_aiu, multi_phrase (multi is for multiple classification)
 audiotype (AVFAD): aiu, phrase, read, spontaneous, multi_aiu, multi_phrase, multi_read, multi_spontaneous
 gender: male, female, both
@@ -45,6 +43,33 @@ gender: male, female, both
 
 Example: python bin/run_voicedisorder.py data/lst/Saarbruecken 5 phrase_both
 ```
+
+For SMOTE data-augmentation you can use:
+```
+python bin/run_voicedisorder_smote.py list_path kfold audio_type
+Example: python bin/run_voicedisorder_smote.py data/lst 5 aiu_both
+```
+
+For SMOTE data-augmentation you can use:
+```
+python bin/run_voicedisorder_smote.py list_path kfold audio_type
+Example: python bin/run_voicedisorder_smote.py data/lst 5 aiu_both
+```
+
+For computing opensmile ComPARE parameters you can use (modify accordingly if you prefer to extract Gemaps or eGemaps parameters):
+```
+python bin/run_features_opensmile.py audio_path out_path
+
+Input/Output: 
+- audio_path: Directory or list(ext=".list") for audio files
+- out_path: Directory for saving features in csv format
+
+Examples:
+- Dir: python bin/run_features_opensmile.py data/audio/Saarbruecken data/features/Saarbruecken
+- List: python bin/run_features_opensmile.py data/lst/Saarbruecken.wav.list data/features/Saarbruecken
+```
+
+
 
 
 
