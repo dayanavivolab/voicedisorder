@@ -21,7 +21,7 @@ For running an experiment you need to clone the repo
 git clone https://github.com/dayanavivolab/voicedisorder.git
 ```
 
-2. Create environment and activate (Python >= 3.6)
+2. Create and activate environment (Python >= 3.6)
 
 ```
 python -m venv /scratch/user/miniconda3/envs/voicedisorder
@@ -35,12 +35,15 @@ python bin/run_voicedisorder.py list_path kfold audio_type
 ```
 
 ```
-audio_type (SVD): a_n, aiu, phrases, multi_a_n, multi_aiu, multi_phrases
-audio_type (AVFAD): aiu, phrases, read, spontaneous, multi_aiu, multi_phrases, multi_read, multi_spontaneous
-```
+Where: 
+- audio_type: combiantion between audiotype and gender (audiotype_gender) 
+audiotype (SVD): a_n, aiu, phrase, multi_a_n, multi_aiu, multi_phrase (multi is for multiple classification)
+audiotype (AVFAD): aiu, phrase, read, spontaneous, multi_aiu, multi_phrase, multi_read, multi_spontaneous
+gender: male, female, both
+- kfold: number of folds
+- list_path: path to the list with audios for processing 
 
-```
-python bin/run_voicedisorder.py data/lst/Saarbruecken 5 phrase_both
+Example: python bin/run_voicedisorder.py data/lst/Saarbruecken 5 phrase_both
 ```
 
 
